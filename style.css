@@ -50,11 +50,12 @@ article:hover {
   box-shadow: 0.2rem 0.2rem 0.3rem rgba(0,0,0,0.6);
 }
 .cardOpen {
-  animation: cardOpen 3s linear 3s;
+  animation: cardOpen 0.5s;
   animation-fill-mode: forwards;
 }
 .cardClose {
-  animation: cardClose 3s;
+  
+  animation: cardClose 0.5s;
   animation-fill-mode: forwards;
 }
 
@@ -112,5 +113,6 @@ p {
   to { height: fit-content;}
 }
 @keyframes cardClose {
-  100% { height: 8rem;}
+  from {height: fit-content;}
+  to { height: 8rem; }
 }
