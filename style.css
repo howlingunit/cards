@@ -30,8 +30,10 @@ h1 {
 
 
 article {
+
+  cursor: pointer;
   width: 90%;
-  /* height: 8rem; */
+  height: 8rem;
 
   display: flex;
   flex-direction: row;
@@ -43,20 +45,19 @@ article {
   box-shadow: 0.1rem 0.1rem 0.2rem rgba(0,0,0,0.5);
   margin-bottom: 1rem;
 
-  /* transition: 1s; */
+  transition: 0.5s;
 }
 article:hover {
-  cursor: pointer;
   box-shadow: 0.2rem 0.2rem 0.3rem rgba(0,0,0,0.6);
 }
 .cardOpen {
-  animation: cardOpen 0.5s;
-  animation-fill-mode: forwards;
+  /* animation: cardOpen 0.5s; */
+  /* animation-fill-mode: forwards; */
 }
 .cardClose {
   
-  animation: cardClose 0.5s;
-  animation-fill-mode: forwards;
+  /* animation: cardClose 0.5s; */
+  /* animation-fill-mode: forwards; */
 }
 
 
@@ -74,7 +75,7 @@ article:hover {
 .text {
   max-width: 80%;
 
-  padding: 0 2% 0 2%;
+  padding: 0 10% 0 10%;
 
   display: flex;
   flex-direction: column;
@@ -93,7 +94,8 @@ article:hover {
 }
 
 .text>img {
-  max-width: 90%;
+
+  max-width: 80%;
 
 }
 
@@ -105,14 +107,50 @@ h2 {
 }
 
 p {
-  font-size: 1.3rem;
+  font-size: 1.6rem;
 }
 
+
 @keyframes cardOpen {
-  from {height: 8rem;}
-  to { height: fit-content;}
+  from { 
+    height: 8rem;
+    width: 90%;
+  }
+  to {
+    height: 100vh;
+    width: 100vw;
+  }
 }
 @keyframes cardClose {
-  from {height: fit-content;}
-  to { height: 8rem; }
+  from {
+    height: 100vh;
+    width: 100vw;
+  }
+  
+  to {     
+    height: 8rem;
+    width: 90%;
+  }
 }
+
+/* @keyframes cardOpen {
+  from { 
+    height: 8rem;
+    width: 90%;
+  }
+  to {
+    height: 100vh;
+    width: 100vw;
+  }
+}
+@keyframes cardClose {
+  from {
+    height: 100vh;
+    width: 100vw;
+  }
+
+  to {     
+    height: 8rem;
+    width: 90%;
+  }
+} */
