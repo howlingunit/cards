@@ -1,5 +1,5 @@
 /* blank slate */
-*{
+* {
   box-sizing: border-box;
   font-size: 100%;
   font-weight: normal;
@@ -9,8 +9,12 @@
   text-decoration: none;
 }
 
+body {
+  background-color: #fff;
+}
 
-body, main{
+body,
+main {
   height: 100%;
   width: 100%;
 
@@ -27,10 +31,7 @@ h1 {
   margin: 0.5rem 0 2rem 0;
 }
 
-
-
 article {
-
   cursor: pointer;
   width: 90%;
   height: 8rem;
@@ -40,25 +41,23 @@ article {
   justify-content: center;
 
   border: 1px solid #000;
-  background-color: #f3f3f3;
+  background-color: #ffffff;
   border-radius: 1.2rem;
   overflow: hidden;
-  box-shadow: 0.1rem 0.1rem 0.2rem rgba(0,0,0,0.5);
+  box-shadow: 0.1rem 0.1rem 0.2rem rgba(0, 0, 0, 0.5);
   margin-bottom: 1rem;
 
   transition: 0.5s;
 }
 article:hover {
-  box-shadow: 0.2rem 0.2rem 0.3rem rgba(0,0,0,0.6);
+  box-shadow: 0.2rem 0.2rem 0.3rem rgba(0, 0, 0, 0.6);
 }
-
 
 .card-pic {
   height: 10rem;
   width: 40rem;
 
   border-radius: 0 0 1.3rem 0;
-
 
   background-image: url("./assets/example.jpg");
 
@@ -67,11 +66,6 @@ article:hover {
 
   transition: 0.5s;
 }
-.cardOpen>.card-pic{ 
-  display: none;
-  /* animation: closeCardPic 0.5s linear 0; */
-  /* animation-fill-mode: forwards; */
-} 
 
 .text {
   max-width: 80%;
@@ -81,23 +75,25 @@ article:hover {
   display: flex;
   flex-direction: column;
   align-items: center;
-
 }
 .text-fade {
   position: absolute;
-  width: 100%;
   height: 100%;
-  background: rgb(255,255,255);
-  background: linear-gradient(0deg, rgba(255,255,255,1) 0%, rgba(255,255,255,0) 80%, rgba(255,255,255,0) 100%);
+  width: 100%;
+  background: rgb(255, 255, 255);
+  background: linear-gradient(
+    0deg,
+    rgba(255, 255, 255, 1) 0%,
+    rgba(255, 255, 255, 0) 80%,
+    rgba(255, 255, 255, 0) 100%
+  );
 }
-.cardOpen>.text>.text-fade{
+.cardOpen > .text > .text-fade {
   display: none;
 }
 
-.text>img {
-
+.text > img {
   max-width: 80%;
-
 }
 
 h2 {
@@ -110,5 +106,3 @@ h2 {
 p {
   font-size: 1.6rem;
 }
-
-
